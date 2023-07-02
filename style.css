@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family: "Gruppo", sans-serif;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.navbar-options {
+  display: flex;
+}
+
+.navbar-options a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 15px 30px;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid black;
+  margin-bottom: 5px;
+}
+.banner {
+  background-image: url("./images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+}
+.banner-cart {
+  padding: 20px;
+  margin-top: 100px;
+  background-color: white;
+  color: black;
+  width: 30%;
+}
+.category {
+  font-family: "Allison", cursive;
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.banner-title {
+  font-weight: 400;
+  font-size: 30px;
+}
+.read-time {
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+}
+.banner-wrapper-mobile {
+  display: none;
+}
+.highlights-section {
+  background-color: #f0f0f0;
+  padding-bottom: 30px;
+}
+.discover-section {
+  text-align: center;
+  font-weight: 400;
+  padding: 40px 0 20px;
+  margin-top: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  /* padding: 0 10px; */
+  font-size: 16px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide h2 {
+  font-size: 20px;
+  margin: -5px 0;
+  font-weight: 500;
+}
+.swiper-text {
+  padding: 0 10px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-container {
+  columns: 3;
+  column-gap: 20px;
+}
+
+.grid-item {
+  /* background-color: #f2f2f2; */
+  margin-bottom: 20px;
+}
+.card-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.card-text h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  background-color: #f0f0f0;
+}
+.footer-container {
+  padding: 40px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left-part {
+  width: 50%;
+}
+.footer-left-part span {
+  font-family: "Gruppo", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer-left-part p {
+  font-size: 14px;
+  width: 70%;
+}
+.footer-left-part input {
+  padding: 10px 10px;
+}
+.footer-right-part {
+  width: 50%;
+}
+
+.footer-right-part span {
+  font-family: "Gruppo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer-right-part p {
+  font-size: 14px;
+}
+/* Responsive for mobile device  */
+
+@media screen and (max-width: 600px) {
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    position: absolute;
+  }
+  .toggle-icon {
+    position: relative;
+    top: 14px;
+    right: -220px;
+  }
+  .navbar-options {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-options.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-options.show a {
+    margin-bottom: 5px;
+  }
+  .banner-wrapper {
+    display: none;
+  }
+  .banner-wrapper-mobile {
+    display: block;
+  }
+  .grid-container {
+    columns: 1;
+  }
+  .footer-container {
+    display: block;
+  }
+  .footer-left-part {
+    width: 100%;
+  }
+  .footer-left-part p {
+    width: 100%;
+  }
+  .footer-right-part {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
